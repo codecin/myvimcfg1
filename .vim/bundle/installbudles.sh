@@ -1,0 +1,16 @@
+git clone  https://github.com/honza/vim-snippets.git
+git clone  https://github.com/kien/ctrlp.vim.git
+git clone  https://github.com/vim-scripts/taglist.vim.git
+git clone  https://github.com/ervandew/supertab.git
+git clone  https://github.com/tsaleh/vim-matchit.git
+git clone  https://github.com/yuratomo/w3m.vim.git
+git clone  https://github.com/wavded/vim-stylus.git
+git clone  https://github.com/StanAngeloff/php.vim.git
+git clone  https://github.com/scrooloose/syntastic.git
+git clone  https://github.com/pangloss/vim-javascript.git
+git clone  https://github.com/groenewege/vim-less.git
+git clone  https://github.com/skammer/vim-css-color.git
+git clone  https://github.com/lepture/vim-css.git
+git clone  https://github.com/garbas/vim-snipmate.git
+git clone  https://github.com/MarcWeber/vim-addon-mw-utils.git
+git clone https://github.com/tomtom/tlib_vim.git
