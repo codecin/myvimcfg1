@@ -1,3 +1,7 @@
+"example dotfiles
+"http://dotfiles.org/.vimrc
+
+
 set nocompatible
 
 filetype off
@@ -30,9 +34,16 @@ set softtabstop=4
 " convert all typed tabs to spaces
 set expandtab
 
-"autocompletion with ctrl+space
-inoremap <c-space> <c-n>
-inoremap <Nul> <c-n>
+"Omnicomplete and keyword complete works together
+inoremap <expr> <C-Space> pumvisible() \|\| &omnifunc == '' ?
+            \ "\<lt>C-n>" :
+            \ "\<lt>C-x>\<lt>C-o><c-r>=pumvisible() ?" .
+            \ "\"\\<lt>c-n>\\<lt>c-p>\\<lt>c-n>\" :" .
+            \ "\" \\<lt>bs>\\<lt>C-n>\"\<CR>"
+imap <C-@> <C-Space>
+
+
+
 
 
 autocmd FileType python set omnifunc=pythoncomplete#Complete
@@ -46,8 +57,33 @@ autocmd FileType c set omnifunc=ccomplete#Complete
 
 map <f12> :!ctags -R .<cr>
 
-
+"OmniComplete menu
 highlight Pmenu ctermbg=238 gui=bold
+
+
+
+
+
+"Disable Arrow Keys
+map <Left> <Nop>
+map <Right> <Nop>
+map <Up> <Nop>
+map <Down> <Nop>
+
+
+set backup
+
+set cursorline
+
+set ruler
+
+set wildmenu
+
+map <C-J> <C-W>j<C-W>_
+map <C-K> <C-W>k<C-W>_
+map <C-L> <C-W>l<C-W>_
+map <C-H> <C-W>h<C-W>_
+map <C-K> <C-W>k<C-W>_
 
 
 
